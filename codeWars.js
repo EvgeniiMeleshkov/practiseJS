@@ -146,3 +146,12 @@ function defineSuit(card) {
             : card.includes('♥') ? 'hearts'
                 : 'spades'
 }
+
+
+//-----------------------------------------------------------------------
+
+
+
+function noSpace(x){
+    return x.replace(/\s/g, '')
+}
