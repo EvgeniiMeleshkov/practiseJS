@@ -155,3 +155,25 @@ function defineSuit(card) {
 function noSpace(x){
     return x.replace(/\s/g, '')
 }
+
+
+//------------------------------------------------------------------------
+
+
+
+
+function dontGiveMeFive(start, end){
+    let a = []
+    for(let i = start; i <= end; i++){
+
+        if(i.toString().includes('5'))
+        {
+            a = a
+        } else {
+            a.push(i.toString())
+        }
+    }
+    return(a.length)
+}
+
+
