@@ -177,3 +177,44 @@ function dontGiveMeFive(start, end){
 }
 
 
+//-------------------------------------------------------------------------
+
+
+function digitize(n) {
+    let a = Array.from(String(n), Number)
+    let x = a.reverse()
+    return x
+}
+
+
+//————————————————————
+
+
+function squareOrSquareRoot(array) {
+    let a = []
+    for(let i = 0; i < array.length; i++){
+        if( Number.isInteger( (Math.sqrt(array[i]) ) ) ){
+            a.push(Math.sqrt(array[i]))
+        } else {
+            a.push(array[i] * array[i])
+        }
+    }
+    return a;
+}
+
+
+
+//—————————————————————
+
+
+function squareOrSquareRoot(array) {
+    return array.map(x => {
+        const r = Math.sqrt(x);
+        return (r % 1 == 0) ? r : (x*x);
+    });
+}
+
+
+
+
+//—————————————————————
