@@ -218,3 +218,9 @@ function squareOrSquareRoot(array) {
 
 
 //—————————————————————
+
+
+function validatePIN (pin) {
+    //return true or false
+    return pin.match(/^\d{4}$|^\d{6}$/) ? true : false
+}
