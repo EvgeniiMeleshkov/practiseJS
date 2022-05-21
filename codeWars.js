@@ -236,3 +236,19 @@ function missingNo(nums) {
     }
     console.log(a)
 }
+
+
+//------------------------------------------
+
+
+function consecutive(arr, a, b) {
+    // Your code here...
+    for(let i = 0; i < arr.length; i++){
+        if(a === arr[i] && b === arr[i + 1]) {
+            return true
+        } else if(a === arr[i + 1] && b === arr[i]) {
+            return true
+        }
+    }
+    return false
+}
