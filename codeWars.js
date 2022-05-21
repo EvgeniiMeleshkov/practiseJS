@@ -252,3 +252,44 @@ function consecutive(arr, a, b) {
     }
     return false
 }
+
+
+//---------------------------------------------------------
+
+
+function to_nato(words) {
+    // Go code
+    let a = [...words];
+    let nato = {
+        a: 'Alfa',
+        b: 'Bravo',
+        c: 'Charlie',
+        d: 'Delta',
+        e: 'Echo',
+        f: 'Foxtrot',
+        g: 'Golf',
+        h: 'Hotel',
+        i: 'India',
+        j: 'Juliett',
+        k: 'Kilo',
+        l: 'Lima',
+        m: 'Mike',
+        n: 'November',
+        o: 'Oscar',
+        p: 'Papa',
+        q: 'Quebec',
+        r: 'Romeo',
+        s: 'Sierra',
+        t: 'Tango',
+        u: 'Uniform',
+        v: 'Victor',
+        w: 'Whiskey',
+        x: 'Xray',
+        y: 'Yankee',
+        z: 'Zulu'
+    }
+    return a.filter((ch) => ch !== ' ').map((i) => {
+        if(/[^a-z]/.test( i.toLowerCase() )) { return i }
+        else { return nato[i.toLowerCase()]; }
+    }).join(' ');
+}
