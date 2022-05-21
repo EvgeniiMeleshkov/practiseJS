@@ -293,3 +293,22 @@ function to_nato(words) {
         else { return nato[i.toLowerCase()]; }
     }).join(' ');
 }
+
+//-----------------------------------------------------
+
+
+function shortestStepsToNum(num) {
+    let a = []
+    function innerRecursion(num) {
+        if(num === 1) {
+        } else if((num % 2) === 0) {
+            a.push(1)
+            return innerRecursion(num /= 2)
+        } else if((num % 2) !== 0) {
+            a.push(1)
+            return innerRecursion(num -= 1)
+        }
+        return(a.length)
+    }
+    return innerRecursion(num)
+}
