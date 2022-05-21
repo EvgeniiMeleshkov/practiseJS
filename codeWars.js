@@ -224,3 +224,15 @@ function validatePIN (pin) {
     //return true or false
     return pin.match(/^\d{4}$|^\d{6}$/) ? true : false
 }
+
+//----------------------------------
+
+function missingNo(nums) {
+    let a = nums.sort((f, s) => f - s)
+    for(let i = 0; i < nums.length; i++) {
+        if(nums[i] - nums[i + 1] === -2) {
+            return (nums[i] += 1)
+        }
+    }
+    console.log(a)
+}
