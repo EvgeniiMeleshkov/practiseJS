@@ -312,3 +312,13 @@ function shortestStepsToNum(num) {
     }
     return innerRecursion(num)
 }
+
+//-------------------------------------------------------
+
+
+function pigIt(str){
+    //Code here
+
+    return str.replace(/(\b[A-Za-z])((\B[a-z]*)?)/g, "$2$1ay")
+
+}
