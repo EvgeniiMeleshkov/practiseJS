@@ -322,3 +322,11 @@ function pigIt(str){
     return str.replace(/(\b[A-Za-z])((\B[a-z]*)?)/g, "$2$1ay")
 
 }
+
+//--------------------------------------------------------
+
+
+function validate(password) {
+    console.log(password)
+    return /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])[A-Za-z\d]{6,}$/.test(password);
+}
