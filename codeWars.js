@@ -330,3 +330,12 @@ function validate(password) {
     console.log(password)
     return /^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])[A-Za-z\d]{6,}$/.test(password);
 }
+
+//----------------------------------------------------------
+
+function removeEveryOther(arr){
+    //your code here
+    return arr.filter((el, i) => {return i % 2 === 0})
+}
+
+//----------------------------------------------------------
