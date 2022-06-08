@@ -340,3 +340,9 @@ function removeEveryOther(arr){
 
 
 //----------------------------------------------------------
+
+function comp(array1, array2){
+    const a = array1.map(el => el*el).sort()
+    const b = array2.sort()
+    return (JSON.stringify(a)===JSON.stringify(b))
+}
